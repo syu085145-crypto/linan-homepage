@@ -2,6 +2,8 @@ import React from 'react';
 import { Navbar } from '@/components/home/Navbar';
 import { Hero } from '@/components/home/Hero';
 import { About } from '@/components/home/About';
+import { Portfolio } from '@/components/home/Portfolio';
+import { Contact } from '@/components/home/Contact';
 import { Chat } from '@/components/home/Chat';
 
 export default function Home() {
@@ -13,6 +15,8 @@ export default function Home() {
       <main>
         <Hero avatarUrl={avatarUrl} />
         <About />
+        <Portfolio />
+        <Contact />
         <Chat />
       </main>
       <footer className="py-12 px-6 border-t bg-slate-50">
