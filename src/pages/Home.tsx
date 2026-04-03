@@ -5,7 +5,7 @@ import { About } from '@/components/home/About';
 import { Chat } from '@/components/home/Chat';
 
 export default function Home() {
-  const avatarUrl = "https://miaoda-site-img.cdn.bcebos.com/images/baidu_image_search_2df08a17-2745-41cf-876d-4e6622ba9950.jpg";
+  const avatarUrl = "https://randomuser.me/api/portraits/men/32.jpg";
   
   return (
     <div className="min-h-screen bg-background">
