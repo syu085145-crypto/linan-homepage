@@ -77,27 +77,8 @@ All colors MUST be HSL.
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
     --destructive-foreground: 210 40% 98%;
-  @layer utilities {
-    .gradient-text {
-      background: linear-gradient(135deg, hsl(var(--primary)), hsl(217.2 91.2% 59.8%));
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      color: transparent;
-    }
-    .glass-card {
-      @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-lg;
-    }
-    .hero-dots {
-      background-image: radial-gradient(hsl(var(--primary) / 0.1) 1px, transparent 1px);
-      background-size: 20px 20px;
-    }
   }
 
-  }
-}
-
-  @layer base {
   * {
     @apply border-border;
   }
@@ -107,6 +88,11 @@ All colors MUST be HSL.
   }
 }
 
+@keyframes scroll-dot {
+  0%, 100% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(10px); opacity: 0.3; }
+}
+
 @layer utilities {
   .gradient-text {
     background: linear-gradient(135deg, hsl(var(--primary)), hsl(217.2 91.2% 59.8%));
@@ -114,14 +100,9 @@ All colors MUST be HSL.
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
-      @keyframes scroll-dot {
-        0%, 100% { transform: translateY(0); opacity: 1; }
-        50% { transform: translateY(10px); opacity: 0.3; }
-      }
-      .animate-scroll-dot {
-        animation: scroll-dot 2s infinite ease-in-out;
-      }
-
+  }
+  .animate-scroll-dot {
+    animation: scroll-dot 2s infinite ease-in-out;
   }
   .glass-card {
     @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-lg;
