@@ -127,15 +127,15 @@ export function Chat() {
     <section id="chat" className="py-24 px-6 md:px-12 bg-white">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
-           <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
+           <h2 className="text-2xl md:text-3xl lg:text-5xl font-extrabold tracking-tight mb-4">
              和「林安」聊聊
            </h2>
-           <p className="text-muted-foreground text-lg">
+           <p className="text-base md:text-lg">
              在这里，你可以通过数字分身快速了解林安的方方面面
            </p>
         </div>
 
-        <div className="bg-slate-50 border-2 border-slate-100 rounded-2xl overflow-hidden shadow-sm flex flex-col h-[600px] relative">
+        <div className="bg-slate-50 border-2 border-slate-100 rounded-2xl overflow-hidden shadow-sm flex flex-col h-[500px] md:h-[600px] relative">
            {/* Chat Header */}
            <div className="bg-white border-b px-6 py-4 flex items-center justify-between">
               <div className="flex items-center gap-3">

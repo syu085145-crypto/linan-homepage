@@ -23,11 +23,11 @@ export function Hero({ avatarUrl }: HeroProps) {
            </Avatar>
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight leading-tight text-primary">
+        <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold mb-6 tracking-tight leading-tight text-primary">
           林安
         </h1>
 
-        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed font-medium">
+        <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed font-medium">
           一个正在学习用 AI 做产品的生物统计师
         </p>
 

@@ -47,11 +47,11 @@ export function Contact() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
           <div className="flex-1">
-            <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-4 flex items-center gap-2">
-              <div className="w-2 h-10 bg-primary rounded-full" />
+            <h2 className="text-2xl md:text-3xl lg:text-5xl font-extrabold tracking-tight mb-4 flex items-center gap-2">
+              <div className="w-2 h-8 md:h-10 bg-primary rounded-full" />
               联系我
             </h2>
-            <p className="text-muted-foreground text-lg font-medium max-w-xl">
+            <p className="text-base md:text-lg font-medium max-w-xl">
               有任何问题或合作机会，欢迎随时联系
             </p>
           </div>
